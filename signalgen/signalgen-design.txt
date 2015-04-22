@@ -1,0 +1,11 @@
+function generator 
+------------------
+AD9834 - DDS chip
+SiLabs 50 MHz MEMS Oscillator - Timebase
+SiLabs 16 MHz MEMS Oscillator - MCU Clock
+STM32F030F4 - MCU
+CP2102 - USB-UART Bridge
+ADA4805-1 - Output Op-Amp
+LTC1983 - -5V Rail Generator
+MCP4542 - FS Adjust Digital Potentiometer
+
