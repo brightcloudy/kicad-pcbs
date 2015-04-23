@@ -1,0 +1,209 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:bce
+LIBS:MCP4542
+LIBS:signalgen-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CP2102 U4
+U 1 1 55383A43
+P 5800 3850
+F 0 "U4" H 5800 3750 50  0000 C CNN
+F 1 "CP2102" H 5800 3950 50  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-28-1EP_5x5mm_Pitch0.5mm" H 5800 3650 50  0001 C CNN
+F 3 "DOCUMENTATION" H 5800 4250 50  0001 C CNN
+	1    5800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C10
+U 1 1 55383ACB
+P 6000 2700
+F 0 "C10" H 6025 2800 50  0000 L CNN
+F 1 "4.7u" H 6025 2600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6038 2550 30  0001 C CNN
+F 3 "" H 6000 2700 60  0000 C CNN
+	1    6000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C11
+U 1 1 55383AEE
+P 6250 2700
+F 0 "C11" H 6275 2800 50  0000 L CNN
+F 1 "100n" H 6275 2600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6288 2550 30  0001 C CNN
+F 3 "" H 6250 2700 60  0000 C CNN
+	1    6250 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2650 5800 2550
+Wire Wire Line
+	5800 2550 6250 2550
+Connection ~ 6000 2550
+$Comp
+L GND #PWR46
+U 1 1 55383B32
+P 6000 2850
+F 0 "#PWR46" H 6000 2600 50  0001 C CNN
+F 1 "GND" H 6000 2700 50  0000 C CNN
+F 2 "" H 6000 2850 60  0000 C CNN
+F 3 "" H 6000 2850 60  0000 C CNN
+	1    6000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR47
+U 1 1 55383B6B
+P 6250 2850
+F 0 "#PWR47" H 6250 2600 50  0001 C CNN
+F 1 "GND" H 6250 2700 50  0000 C CNN
+F 2 "" H 6250 2850 60  0000 C CNN
+F 3 "" H 6250 2850 60  0000 C CNN
+	1    6250 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR44
+U 1 1 55383BA5
+P 4700 3650
+F 0 "#PWR44" H 4700 3500 50  0001 C CNN
+F 1 "+5V" H 4700 3790 50  0000 C CNN
+F 2 "" H 4700 3650 60  0000 C CNN
+F 3 "" H 4700 3650 60  0000 C CNN
+	1    4700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3650 5000 3650
+Wire Wire Line
+	4850 3650 4850 3550
+Wire Wire Line
+	4850 3550 5000 3550
+Connection ~ 4850 3650
+$Comp
+L C C9
+U 1 1 55383BED
+P 4400 3800
+F 0 "C9" H 4425 3900 50  0000 L CNN
+F 1 "100n" H 4425 3700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4438 3650 30  0001 C CNN
+F 3 "" H 4400 3800 60  0000 C CNN
+	1    4400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 55383CB9
+P 4150 3800
+F 0 "C8" H 4175 3900 50  0000 L CNN
+F 1 "1u" H 4175 3700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4188 3650 30  0001 C CNN
+F 3 "" H 4150 3800 60  0000 C CNN
+	1    4150 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 3650
+Connection ~ 4400 3650
+$Comp
+L GND #PWR42
+U 1 1 55383D31
+P 4150 3950
+F 0 "#PWR42" H 4150 3700 50  0001 C CNN
+F 1 "GND" H 4150 3800 50  0000 C CNN
+F 2 "" H 4150 3950 60  0000 C CNN
+F 3 "" H 4150 3950 60  0000 C CNN
+	1    4150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR43
+U 1 1 55383D4A
+P 4400 3950
+F 0 "#PWR43" H 4400 3700 50  0001 C CNN
+F 1 "GND" H 4400 3800 50  0000 C CNN
+F 2 "" H 4400 3950 60  0000 C CNN
+F 3 "" H 4400 3950 60  0000 C CNN
+	1    4400 3950
+	1    0    0    -1  
+$EndComp
+Text HLabel 4900 3450 0    60   BiDi ~ 0
+DN
+Text HLabel 4900 3350 0    60   BiDi ~ 0
+DP
+Wire Wire Line
+	4900 3350 5000 3350
+Wire Wire Line
+	4900 3450 5000 3450
+NoConn ~ 5000 3150
+NoConn ~ 5000 3250
+NoConn ~ 5000 3750
+NoConn ~ 5000 3850
+NoConn ~ 5000 3950
+NoConn ~ 5000 4050
+NoConn ~ 5000 4150
+NoConn ~ 5000 4450
+NoConn ~ 5000 4550
+$Comp
+L GND #PWR45
+U 1 1 55383E28
+P 5800 5050
+F 0 "#PWR45" H 5800 4800 50  0001 C CNN
+F 1 "GND" H 5800 4900 50  0000 C CNN
+F 2 "" H 5800 5050 60  0000 C CNN
+F 3 "" H 5800 5050 60  0000 C CNN
+	1    5800 5050
+	1    0    0    -1  
+$EndComp
+Text HLabel 4950 4250 0    60   Input ~ 0
+RXD
+Wire Wire Line
+	4950 4250 5000 4250
+Text HLabel 4950 4350 0    60   Output ~ 0
+TXD
+Wire Wire Line
+	4950 4350 5000 4350
+$EndSCHEMATC

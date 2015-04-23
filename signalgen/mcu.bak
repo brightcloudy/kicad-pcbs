@@ -1,0 +1,297 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:bce
+LIBS:MCP4542
+LIBS:signalgen-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32F030F4 U3
+U 1 1 55382FF7
+P 5450 3300
+F 0 "U3" H 5450 3000 50  0000 C CNN
+F 1 "STM32F030F4" H 5450 3100 50  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-20_4.4x6.5mm_Pitch0.65mm" H 5450 2750 50  0001 C CNN
+F 3 "DOCUMENTATION" H 5450 3850 50  0001 C CNN
+	1    5450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR38
+U 1 1 553833C8
+P 6450 3400
+F 0 "#PWR38" H 6450 3150 50  0001 C CNN
+F 1 "GND" H 6450 3250 50  0000 C CNN
+F 2 "" H 6450 3400 60  0000 C CNN
+F 3 "" H 6450 3400 60  0000 C CNN
+	1    6450 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3350 6450 3350
+Wire Wire Line
+	6450 3350 6450 3400
+$Comp
+L C C6
+U 1 1 553837E4
+P 4250 3400
+F 0 "C6" H 4275 3500 50  0000 L CNN
+F 1 "100n" H 4275 3300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4288 3250 30  0001 C CNN
+F 3 "" H 4250 3400 60  0000 C CNN
+	1    4250 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 5538384D
+P 4000 3400
+F 0 "C5" H 4025 3500 50  0000 L CNN
+F 1 "1u" H 4025 3300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4038 3250 30  0001 C CNN
+F 3 "" H 4000 3400 60  0000 C CNN
+	1    4000 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 55383885
+P 6700 3400
+F 0 "C7" H 6725 3500 50  0000 L CNN
+F 1 "100n" H 6725 3300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6738 3250 30  0001 C CNN
+F 3 "" H 6700 3400 60  0000 C CNN
+	1    6700 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3250 6850 3250
+$Comp
+L GND #PWR39
+U 1 1 553838DD
+P 6700 3550
+F 0 "#PWR39" H 6700 3300 50  0001 C CNN
+F 1 "GND" H 6700 3400 50  0000 C CNN
+F 2 "" H 6700 3550 60  0000 C CNN
+F 3 "" H 6700 3550 60  0000 C CNN
+	1    6700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR37
+U 1 1 553838F0
+P 4250 3550
+F 0 "#PWR37" H 4250 3300 50  0001 C CNN
+F 1 "GND" H 4250 3400 50  0000 C CNN
+F 2 "" H 4250 3550 60  0000 C CNN
+F 3 "" H 4250 3550 60  0000 C CNN
+	1    4250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR34
+U 1 1 55383903
+P 4000 3550
+F 0 "#PWR34" H 4000 3300 50  0001 C CNN
+F 1 "GND" H 4000 3400 50  0000 C CNN
+F 2 "" H 4000 3550 60  0000 C CNN
+F 3 "" H 4000 3550 60  0000 C CNN
+	1    4000 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3250 4700 3250
+Connection ~ 4250 3250
+$Comp
+L +3.3V #PWR41
+U 1 1 55383928
+P 6850 3250
+F 0 "#PWR41" H 6850 3100 50  0001 C CNN
+F 1 "+3.3V" H 6850 3390 50  0000 C CNN
+F 2 "" H 6850 3250 60  0000 C CNN
+F 3 "" H 6850 3250 60  0000 C CNN
+	1    6850 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 6700 3250
+$Comp
+L +3.3V #PWR33
+U 1 1 5538394F
+P 3800 3250
+F 0 "#PWR33" H 3800 3100 50  0001 C CNN
+F 1 "+3.3V" H 3800 3390 50  0000 C CNN
+F 2 "" H 3800 3250 60  0000 C CNN
+F 3 "" H 3800 3250 60  0000 C CNN
+	1    3800 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4000 3250
+Text HLabel 3700 3500 0    60   Output ~ 0
+USART1_TX
+Wire Wire Line
+	6200 3150 6400 3150
+Text HLabel 3700 3650 0    60   Input ~ 0
+USART1_RX
+Wire Wire Line
+	6200 3050 6400 3050
+$Comp
+L R R2
+U 1 1 55384200
+P 4050 3000
+F 0 "R2" V 4130 3000 50  0000 C CNN
+F 1 "10k" V 4050 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 3980 3000 30  0001 C CNN
+F 3 "" H 4050 3000 30  0000 C CNN
+	1    4050 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR35
+U 1 1 553842F9
+P 4050 3150
+F 0 "#PWR35" H 4050 2900 50  0001 C CNN
+F 1 "GND" H 4050 3000 50  0000 C CNN
+F 2 "" H 4050 3150 60  0000 C CNN
+F 3 "" H 4050 3150 60  0000 C CNN
+	1    4050 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2850 4700 2850
+NoConn ~ 4700 3050
+Text HLabel 4650 2950 0    60   Input ~ 0
+OSCIN
+Wire Wire Line
+	4650 2950 4700 2950
+$Comp
+L R R3
+U 1 1 5538591D
+P 4250 2900
+F 0 "R3" V 4330 2900 50  0000 C CNN
+F 1 "10k" V 4250 2900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4180 2900 30  0001 C CNN
+F 3 "" H 4250 2900 30  0000 C CNN
+	1    4250 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR36
+U 1 1 55385A61
+P 4250 2750
+F 0 "#PWR36" H 4250 2600 50  0001 C CNN
+F 1 "+3.3V" H 4250 2890 50  0000 C CNN
+F 2 "" H 4250 2750 60  0000 C CNN
+F 3 "" H 4250 2750 60  0000 C CNN
+	1    4250 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3050 4250 3150
+Wire Wire Line
+	4250 3150 4700 3150
+Text HLabel 7050 2950 2    60   BiDi ~ 0
+SWDIO
+Wire Wire Line
+	6200 2950 7050 2950
+Text HLabel 6350 2850 2    60   Input ~ 0
+SWCLK
+Wire Wire Line
+	6200 2850 6350 2850
+$Comp
+L R R4
+U 1 1 55385B9C
+P 6850 2800
+F 0 "R4" V 6930 2800 50  0000 C CNN
+F 1 "100k" V 6850 2800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 6780 2800 30  0001 C CNN
+F 3 "" H 6850 2800 30  0000 C CNN
+	1    6850 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 6850 2950
+$Comp
+L +3.3V #PWR40
+U 1 1 55385BEF
+P 6850 2650
+F 0 "#PWR40" H 6850 2500 50  0001 C CNN
+F 1 "+3.3V" H 6850 2790 50  0000 C CNN
+F 2 "" H 6850 2650 60  0000 C CNN
+F 3 "" H 6850 2650 60  0000 C CNN
+	1    6850 2650
+	1    0    0    -1  
+$EndComp
+Text HLabel 4600 3750 0    60   Output ~ 0
+SPI1_NSS
+Wire Wire Line
+	4600 3750 4700 3750
+Text HLabel 6900 3750 2    60   Output ~ 0
+SPI1_SCK
+Wire Wire Line
+	6900 3750 6200 3750
+Text HLabel 6900 3450 2    60   Output ~ 0
+SPI1_MOSI
+Wire Wire Line
+	6200 3550 6600 3550
+Wire Wire Line
+	6600 3550 6600 3450
+Wire Wire Line
+	6600 3450 6900 3450
+NoConn ~ 6200 3650
+Text HLabel 4600 3450 0    60   Output ~ 0
+PA1
+Wire Wire Line
+	4600 3450 4700 3450
+Wire Wire Line
+	3700 3650 4700 3650
+Wire Wire Line
+	3700 3500 4450 3500
+Wire Wire Line
+	4450 3500 4450 3550
+Wire Wire Line
+	4450 3550 4700 3550
+Text HLabel 6400 3150 2    60   Output ~ 0
+I2C1_SCL
+Text HLabel 6400 3050 2    60   BiDi ~ 0
+I2C1_SDA
+$EndSCHEMATC
